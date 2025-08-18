@@ -1,0 +1,155 @@
+<html><head>
+<script>
+  function getValue() {
+  var textbox = document.getElementById("textbox");
+  let FixedStringValues = textbox.value.slice(34)
+  let sharelink = 'https://bj0rntje.github.io/invite.html?' + FixedStringValues
+  navigator.clipboard.writeText(sharelink);
+  alert('Coppied '+sharelink+' to clipboard');
+}
+
+    function InstantJoin() {
+  var textbox = document.getElementById("textbox");
+  let FixedStringValues = textbox.value.slice(34)
+  window.location.replace('roblox://navigation/share_links?code='+FixedStringValues)
+}
+
+    function OutputLink() {
+  var textbox = document.getElementById("textbox");
+    var OutputBox = document.getElementById("OutputBox");
+  let FixedStringValues = textbox.value.slice(34);
+  let sharelink = 'https://bj0rntje.github.io/invite.html?' + FixedStringValues;
+  OutputBox.value = sharelink;
+}
+    function getValueGame() {
+  var textbox = document.getElementById("textboxGame");
+  let FixedStringValues = textbox.value.slice(29).split('/')[0];
+  let sharelink = 'https://bj0rntje.github.io/game.html?' + FixedStringValues
+  navigator.clipboard.writeText(sharelink);
+  alert('Coppied '+sharelink+' to clipboard');
+}
+      function InstantJoinGame() {
+  var textbox = document.getElementById("textboxGame");
+  let FixedStringValues = textbox.value.slice(29).split('/')[0];
+  window.location.replace('roblox://experiences/start?PlaceID='+FixedStringValues)
+}
+      function OutputLinkGame() {
+  var textbox = document.getElementById("textboxGame");
+    var OutputBoxGame = document.getElementById("OutputBoxGame");
+  let FixedStringValues = textbox.value.slice(29).split('/')[0];
+  let sharelink = 'https://bj0rntje.github.io/game.html?' + FixedStringValues;
+  OutputBoxGame.value = sharelink;
+}
+    function getValueUser() {
+  var textbox = document.getElementById("textboxUser");
+  let FixedStringValues = textbox.value.slice(29).split('/')[0];
+  let sharelink = 'https://bj0rntje.github.io/join.html?' + FixedStringValues
+  navigator.clipboard.writeText(sharelink);
+  alert('Coppied '+sharelink+' to clipboard');
+}
+      function InstantJoinUser() {
+  var textbox = document.getElementById("textboxUser");
+  let FixedStringValues = textbox.value.slice(29).split('/')[0]
+  window.location.replace('roblox://experiences/start?userId='+FixedStringValues)
+}
+      function OutputLinkUser() {
+  var textbox = document.getElementById("textboxUser");
+    var OutputBoxUser = document.getElementById("OutputBoxUser");
+  let FixedStringValues = textbox.value.slice(29).split('/')[0]
+  let sharelink = 'https://bj0rntje.github.io/join.html?' + FixedStringValues;
+  OutputBoxUser.value = sharelink;
+}
+</script>
+</head><body style="
+    color: white;
+    background-color: black;
+">
+<h2 style="
+    color: white;
+">Automatic Joiners</h2>
+<a href="https://bj0rntje.github.io/join.html?640031638" target="_blank">Join User</a> 
+<br>
+Put the user link intro the input box below to convert it to a working join link
+<br>
+<input type="text" id="textboxUser">
+<button onclick="getValueUser()">Convert Game User And Copy</button>
+<button onclick="InstantJoinUser()">Convert User Link And Join</button>
+<button onclick="OutputLinkUser()">Convert User Link To Output</button>
+<br>
+output:
+<br>
+<input type="text" id="OutputBoxUser">
+https://bj0rntje.github.io/join.html?640031638
+<br>
+change the number alfter the ? to the player id you want to automaticly join
+<br><br><br>
+
+<a href="https://bj0rntje.github.io/game.html?6516141723" target="_blank">Join Game</a> 
+<br>
+Put game link intro the input box below to convert it to a working join link
+<br>
+<input type="text" id="textboxGame">
+<button onclick="getValueGame()">Convert Game Link And Copy</button>
+<button onclick="InstantJoinGame()">Convert Game Link And Join</button>
+<button onclick="OutputLinkGame()">Convert Game Link To Output</button>
+<br>
+output:
+<br>
+<input type="text" id="OutputBoxGame">
+<br>
+https://bj0rntje.github.io/game.html?6516141723
+<br>
+change the number alfter the ? to the player id you want to automaticly join
+<br><br><br>
+
+<a href="https://bj0rntje.github.io/invite.html?3042f0bc08b27e4c91aae5820b5ba42c&amp;type=ExperienceInvite" target="_blank">Share Server Link or private link Generator</a> 
+<br>
+Go in a server, Press Escape or go to menu, Press invite, Press in upper right corner copy link
+<br>
+then paste link in the box and press Convert Link to make a permanent server link
+<br>
+private server links also work as long as it starts with https://www.roblox.com/share?
+<br>
+by creating a invite link usualy u cannot join it urself but if u convert the link you can join / invite urself allowing you to rejoin the game
+<br>
+For some reason i cannot join any vip servers without a vpn, this method wil also fix that problem. just make sure its the https://www.roblox.com/share link.
+<br>
+You can also drag discord vip server link invites in here just make sure the input box is empty
+<br>
+<input type="text" id="textbox">
+<button onclick="getValue()">Convert Invite Link And Copy</button>
+<button onclick="InstantJoin()">Convert Invite Link And Join</button>
+<button onclick="OutputLink()">Convert Invite Link To Output</button>
+<br>
+output:
+<br>
+<input type="text" id="OutputBox">
+<br>
+example link:
+<br>
+https://bj0rntje.github.io/invite.html?3042f0bc08b27e4c91aae5820b5ba42c&amp;type=ExperienceInvite
+<br><br><br>
+
+<a href="https://github.com/bj0rntje/bj0rntje.github.io/" target="_blank">View site via github</a> 
+<br>
+used to view source code of site.
+<br><br><br>
+
+<a href="https://greasyfork.org/nl/scripts/509220-roblox-quick-join-button" target="_blank">Install roblox quick join button via tampermonkey</a> 
+<br>
+tampermonkey is a site to publish scripts. this will require the tampermonkey extention to be installed
+<br>
+This adds a button next to the play button to instantly join the game
+<br>
+https://greasyfork.org/nl/scripts/509220-roblox-quick-join-button
+<br><br><br>
+
+<a href="https://greasyfork.org/nl/scripts/509224-roblox-quick-join-button-profile" target="_blank">Install roblox quick join button on profile via tampermonkey</a> 
+<br>
+tampermonkey is a site to publish scripts. this will require the tampermonkey extention to be installed
+<br>
+This adds a button next to the join button to instantly join the game and if join button doesen't exists it will still be added so you don't have to refresh the page
+<br>
+https://greasyfork.org/nl/scripts/509224-roblox-quick-join-button-profile
+
+</body></html>
